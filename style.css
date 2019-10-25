@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    color:#414146;
+}
+li {
+    list-style-type: none;
+    display: inline;
+}
+.header__container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.header__nav{
+    padding-top: 20px;
+}
+.header__logo h2 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 300;
+    font-size: 50px;
+}
+.header__nav ul li:not(:last-child) {
+    padding-right: 50px;
+}
+.header__nav ul li a:hover {
+    border-bottom:1px solid #414146;
+}
+
