@@ -4,6 +4,7 @@
 }
 
 body {
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -41,7 +42,7 @@ li {
 }
 
 .header__nav ul li a:hover {
-    border-bottom: 1px solid #414146;
+    border-bottom: 1px solid #414146; 
 }
 
 .main__represent {
@@ -76,7 +77,10 @@ li {
     font-size: 18px;
     padding-top: 18px;
 }
-
+.main__represent-button:hover {
+    opacity: 0.9;
+    transition-duration: .2s;
+}
 .main__represent-button {
     background: #4d4d4d;
     width: 35%;
@@ -85,6 +89,7 @@ li {
     padding-top: 18px;
     padding-bottom: 18px;
     border-radius: 100px/100px;
+    cursor: pointer;
 }
 .main__features-container {
     width: 80%;
