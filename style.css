@@ -18,6 +18,10 @@ li {
     display: inline;
 }
 
+video {
+    outline: none;
+}
+
 .header__container {
     width: 80%;
     margin: 0 auto;
@@ -42,7 +46,7 @@ li {
 }
 
 .header__nav ul li a:hover {
-    border-bottom: 1px solid #414146; 
+    border-bottom: 1px solid #414146;
 }
 
 .main__represent {
@@ -77,10 +81,12 @@ li {
     font-size: 18px;
     padding-top: 18px;
 }
+
 .main__represent-button:hover {
     opacity: 0.9;
     transition-duration: .2s;
 }
+
 .main__represent-button {
     background: #4d4d4d;
     width: 35%;
@@ -91,6 +97,7 @@ li {
     border-radius: 100px/100px;
     cursor: pointer;
 }
+
 .main__features-container {
     width: 80%;
     margin: 0 auto;
@@ -100,18 +107,102 @@ li {
     padding-bottom: 100px;
     border-bottom: 1px solid #ddd;
 }
+
 .main__futures-item {
     width: 22%;
     text-align: center;
 }
+
 .main__futures-item h2 {
     text-transform: uppercase;
     color: #414146;
     padding-top: 40px;
     padding-bottom: 30px;
+    font-size: 30px;
 }
+
 .main__futures-item p {
     color: #414146;
     font-size: 14px;
 }
 
+.main__preview-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+}
+
+.main__preview h2 {
+    text-transform: uppercase;
+    color: #414146;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.main__preview p {
+    color: #414146;
+    padding-bottom: 80px;
+}
+
+.main__work-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-column-gap: 150px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.main__work h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #414146;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.main__work-item img {
+    transition: all 0.5s ease 0s;
+}
+
+.main__work-item:hover>img {
+    transform: scale(2, 2);
+}
+
+.main__subscribe-container {
+    text-align: center;
+    background: #eee;
+}
+
+.main__subscribe-title h2 {
+    text-transform: uppercase;
+    color: #414146;
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+.main__subscribe-title p {
+    font-size: 14px;
+    color: #414146;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.main__subscribe-button {
+    width: 15%;
+    margin: 0 auto;
+    border: 2px solid #414146;
+    border-radius: 100px/100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main__subscribe-button a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #414146;
+    text-transform: uppercase;
+}
