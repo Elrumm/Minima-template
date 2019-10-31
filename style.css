@@ -15,7 +15,6 @@ a {
 
 li {
     list-style-type: none;
-    display: inline;
 }
 
 video {
@@ -30,7 +29,9 @@ video {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
+.header__nav li {
+    display: inline;
+}
 .header__nav {
     padding-top: 20px;
 }
@@ -175,6 +176,7 @@ video {
 .main__subscribe-container {
     text-align: center;
     background: #eee;
+    padding-bottom: 100px;
 }
 
 .main__subscribe-title h2 {
@@ -199,10 +201,63 @@ video {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-.main__subscribe-button a {
+.main__subscribe-button p {
     font-size: 16px;
     font-weight: bold;
     color: #414146;
     text-transform: uppercase;
+}
+.main__social-item {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #414146;
+}
+.main__social-container {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.main__social-item img {
+    padding-top: 40%;
+    padding-left: 40%;
+}
+.main__social-item:hover {
+    background-color: #55acee;
+    transition-duration: .2s;
+}
+footer {
+    background: #3b3b3b;
+    color:#fff;
+}
+.footer__container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+.footer__block {
+    width: 17%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.footer__block h3{
+    padding-bottom: 36px;
+}
+.footer__block p {
+    padding-bottom: 15px;
+}
+.footer__block li{
+    padding-bottom: 15px;
+}
+.footer__block li a {
+    color: #fff;
+}
+.footer__block span {
+    color: #adadad;
+}
+.footer__block li a:hover {
+    border-bottom: 1px solid #adadad;
 }
