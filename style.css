@@ -58,9 +58,10 @@ video {
         display: block;
         font-size: 25px;
         float: right;
-        margin-top: -15px;
+        margin-top: -25px;
         margin-right: 91px;
         width: 0;
+        
     }
 }
 .header__nav.responsive {
@@ -72,9 +73,9 @@ video {
   }
   .header__nav.responsive a.icon {
     position: absolute;
-    margin-right: 91px;
-    top: -30px;
+    top: -8px;
     width: 0;
+    
   }
   .header__nav.responsive a {
     float: none;
@@ -157,7 +158,41 @@ video {
     color: #414146;
     font-size: 14px;
 }
-
+@media screen and (max-width: 920px) {
+    .main__futures-item h2 {
+        font-size: 20px;
+    }
+    .main__futures-item p {
+        font-size: 12px;
+    }
+    .main__preview video {
+        width: 350px;
+        height: 350px;
+    }
+    .main__preview p {
+        font-size: 20px;
+    }
+    .main__preview h2 {
+        font-size: 20px;   
+    }
+}
+@media screen and (max-width: 700px) {
+    .main__features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__futures-item p {
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+    .main__futures-item h2 {
+        padding-bottom: 15px;
+        font-size: 30px;
+    }
+    .main__futures-item {
+        width:100%;
+    }
+}
 .main__preview-container {
     width: 80%;
     margin: 0 auto;
@@ -202,6 +237,31 @@ video {
 
 .main__work-item:hover>img {
     transform: scale(2, 2);
+}
+@media screen and (max-width: 1700px) {
+    .main__work-container {
+        grid-column-gap: 80px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .main__work-container {
+        grid-template-columns: 300px 300px;
+    }
+    .main__work-item:hover>img {
+        transform: scale(1.5, 1.5);
+    }
+}
+@media screen and (max-width: 750px) {
+    .main__work-container {
+        grid-template-columns: 300px;
+    }
+    .main__work-item:hover>img {
+        transform: scale(1.5, 1.5);
+    }
+    .main__work-container {
+        grid-row-gap: 50px;
+    }
+    
 }
 
 .main__subscribe-container {
